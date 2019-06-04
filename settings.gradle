@@ -1,0 +1,2 @@
+include ':app', ':tabpagerindex'
+project(':tabpagerindex').projectDir = new File('tabpagerindictor')

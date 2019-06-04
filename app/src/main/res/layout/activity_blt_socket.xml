@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_title"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="45dp">
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/back" />
+
+        </LinearLayout>
+        <TextView
+            style="@style/title_layout"
+            android:text="诊断过程"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/tv_note"
+            style="@style/index_layout"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:textColor="@color/blue"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/shape_label_cycle_blue"
+            android:text="生成\n报告"/>
+        <TextView
+            android:id="@+id/img_help"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/shape_label_cycle_blue"
+            style="@style/index_layout"
+            android:textColor="@color/blue"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="远程\n协助"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/tv_note"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/line_title"
+        android:layout_below="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cut_off_rule_line"/>
+    <LinearLayout
+        android:layout_below="@+id/line_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lv_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:dividerHeight="0.5dip"
+            android:background="@color/cut_off_rule_line"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cut_off_rule_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/img_change"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/img_botton_change"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"/>
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/share_while_gray_3"
+                    android:layout_margin="5dp"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="16dp"
+                    android:background="@drawable/share_blue_blue_3"
+                    android:textColor="@color/white"
+                    android:text="发送"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"/>
+            <RadioGroup
+                android:id="@+id/group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="bottom"
+        android:background="#66999999"
+        android:id="@+id/ll_base"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <ListView
+            android:id="@+id/lv_obd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/gray_99"
+            android:dividerHeight="0.5dip"
+            android:padding="1px"
+            android:background="@drawable/share_gray_while_0"
+            android:listSelector="@android:color/transparent">
+
+        </ListView>
+        <ListView
+            android:id="@+id/lv_obd2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/gray_99"
+            android:dividerHeight="0.5dip"
+            android:background="@drawable/share_gray_while_0"
+            android:listSelector="@android:color/transparent">
+
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>
+    </layout>

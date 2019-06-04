@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:id="@+id/re_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_click_back_color"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/back" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/lightblack"
+            android:textSize="18dp"
+            android:text="编辑报告"/>
+
+        <TextView
+            android:id="@+id/img_search"
+            style="@style/help_layout"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="提交"
+            android:textColor="@color/blue" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/re_title"
+        android:background="@color/cut_off_rule_line" />
+
+</LinearLayout>
+</layout>

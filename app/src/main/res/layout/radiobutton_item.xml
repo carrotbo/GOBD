@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:id="@+id/ll_rbt"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/cut_off_rule_line"/>
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@mipmap/pid_more"/>
+<RadioButton
+    android:id="@+id/month_popwindow_radiobutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:button="@null"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:text="OBD"
+    android:layout_marginLeft="1dp"
+    android:textColor="@color/itemcolor"
+    android:textSize="14dp" />
+</LinearLayout>
+</LinearLayout>

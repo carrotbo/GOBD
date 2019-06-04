@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:dividerHeight="0.5dip"
+            android:background="@color/cut_off_rule_line"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent">
+
+        </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cut_off_rule_line"/>
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="bottom"
+        android:background="#66999999"
+        android:id="@+id/ll_base"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <ListView
+            android:id="@+id/lv_obd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/gray_99"
+            android:dividerHeight="0.5dip"
+            android:padding="1px"
+            android:background="@drawable/share_gray_while_0"
+            android:listSelector="@android:color/transparent">
+
+        </ListView>
+        <ListView
+            android:id="@+id/lv_obd2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/gray_99"
+            android:dividerHeight="0.5dip"
+            android:background="@drawable/share_gray_while_0"
+            android:listSelector="@android:color/transparent">
+
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>

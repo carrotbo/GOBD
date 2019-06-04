@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GOBD</string>
+
+
+    <string name="connect_obd">1.找到OBD接口，插上设备，钥匙拧至ACC状态，接通电源。\n2.点击本页下方开始连接设备，设备连接成功后，将自动跳转到读取数据页面。\n3.如果使用中，蓝牙连接中断，您可以尝试重新连接。</string>
+    <string name="feedback">意见反馈</string>
+    <string name="sbout">关于我们</string>
+    <string name="attract">商务合作</string>
+    <string name="syster_updata">系统更新</string>
+    <string name="amend_password">修改密码</string>
+</resources>

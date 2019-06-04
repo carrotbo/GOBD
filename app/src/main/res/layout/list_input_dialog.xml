@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/share_while_while_3"
+        android:minHeight="100dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:background="@drawable/share_top_blue_3"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/confirm_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/lightblack"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="请输入参值:"
+            android:textSize="16sp" />
+        <ListView
+            android:id="@+id/lv_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0.5dip"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/share_gray_gray_3"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginRight="10dp"
+                android:text="取消"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_go"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/login_style"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="确认"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

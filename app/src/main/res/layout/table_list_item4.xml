@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    >
+
+    <com.gwkj.qixiubaodian.obd.view.CircleImageView
+        android:id="@+id/ic_user"
+        android:layout_below="@+id/tv_time"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/self_icon_default"
+        app:border_color="#E0E0E0"
+        app:border_width="1dp" />
+    <TextView
+        android:id="@+id/tv_name"
+
+        style="@style/help_layout"
+        android:maxWidth="230dp"
+        android:layout_toLeftOf="@+id/ic_user"
+        android:layout_alignTop="@+id/ic_user"
+        android:layout_marginRight="2dp"
+        android:paddingRight="10dp"
+        android:text="111"
+        android:textColor="@color/gray_66"
+        />
+    <!--lookAt箭头指向-->
+    <!--lookLength 箭头的长度-->
+    <!--lookPosition  相对于上面左边 的 边距-->
+    <!--lookWidth 箭头宽度-->
+    <!--bubbleColor 气泡的颜色-->
+    <!--bubbleRadius 气泡的圆角-->
+    <!--bubblePadding 气泡边缘到BubbleLayout边缘的距离-->
+    <!--shadowX阴影在x轴方向的偏移-->
+    <!--app:shadowRadius="0dp" 无阴影-->
+    <!--app:shadowColor 阴影颜色-->
+    <com.gwkj.qixiubaodian.obd.view.BubbleLayout
+        android:id="@+id/bubbleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ic_user"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        app:lookAt="right"
+        app:lookLength="8dp"
+        app:lookPosition="13dp"
+        app:lookWidth="5dp"
+        app:bubbleColor="@color/white"
+        app:bubbleRadius="5dp"
+        app:bubblePadding="0dp"
+        app:shadowX="0dp"
+        app:shadowY="0dp"
+        app:shadowRadius="0dp"
+        app:shadowColor="@color/white"
+        >
+    <TextView
+        android:id="@+id/tv_content"
+
+        style="@style/title_layout"
+        android:maxWidth="226dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:lineSpacingExtra="3dp"
+        android:gravity="left"
+        android:text="111"
+        android:textColor="@color/lightblack" />
+</com.gwkj.qixiubaodian.obd.view.BubbleLayout>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/containerBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp" />
+
+
+    <!--导航栏-->
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="8dp"
+        android:background="@color/white"
+
+        >
+        <!--首页-->
+        <LinearLayout
+            android:id="@+id/btnModule1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/index_tab_ico_1"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="诊断"
+                android:textColor="@drawable/main_menu_font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!--找资料-->
+        <LinearLayout
+            android:id="@+id/btnModule3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/index_tab_ico_2"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="报告"
+                android:textColor="@drawable/main_menu_font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!--汽修人-->
+        <LinearLayout
+            android:id="@+id/btnModule2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/index_tab_ico_3"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="发现"
+                android:textColor="@drawable/main_menu_font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!--学知识-->
+        <LinearLayout
+            android:id="@+id/btn_main_study"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/index_tab_ico_4"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/main_menu_font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cut_off_rule_line"
+        android:layout_above="@+id/ll_tab"
+        />
+</RelativeLayout>

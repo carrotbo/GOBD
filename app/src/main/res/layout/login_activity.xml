@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+    <include
+        android:id="@+id/il_title"
+        layout="@layout/title_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cut_off_rule_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="可以使用汽修宝典帐号直接登录"
+            android:textColor="@color/red"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/cut_off_rule_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/login_phone" />
+
+        <com.gwkj.qixiubaodian.obd.view.EditTextWithDel
+            android:id="@+id/edit_account"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray_99" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/login_password" />
+
+        <com.gwkj.qixiubaodian.obd.view.EditTextWithDel
+            android:id="@+id/edit_pw"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray_99" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_style"
+        android:text="登录"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/login_retrieve_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="注册账号"
+            android:textColor="@color/blue" />
+
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:hint="忘记密码"
+            android:textColor="@color/gray_66" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/gray_99"
+        android:lineSpacingExtra="5dp"
+        android:textSize="12sp"
+        android:text="使用汽修宝典公众号用户可以在公众号绑定手机号码，方便该手机号码免注册直接登录APP。"/>
+
+</LinearLayout>
+</layout>

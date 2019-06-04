@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <variable
+        name="fault"
+        type="com.gwkj.qixiubaodian.obd.module.fault.item.FaultDetailItem"></variable>
+</data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/back" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal|center"
+            android:singleLine="true"
+            android:textColor="@color/lightblack"
+            android:text="@{fault.code}"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cut_off_rule_line"
+        android:id="@+id/line"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            style="@style/title_layout"
+            android:textStyle="bold"
+            android:text="故障码详情"/>
+    <TextView
+        style="@style/title_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/btn1"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="描述："/>
+        <TextView
+            style="@style/title_layout"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="@{fault.codedesc}"/>
+        <TextView
+            style="@style/title_layout"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:background="@color/btn2"
+            android:padding="10dp"
+            android:text="原因："/>
+        <TextView
+            style="@style/title_layout"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="@{fault.yuanyin}"/>
+        <TextView
+            style="@style/title_layout"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:background="@color/btn3"
+            android:padding="10dp"
+            android:text="解决文案："/>
+        <TextView
+            style="@style/title_layout"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="@{fault.fangan}"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</layout>
